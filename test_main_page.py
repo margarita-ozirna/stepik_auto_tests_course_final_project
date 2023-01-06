@@ -20,21 +20,21 @@ def test_guest_url_contains_login(browser):
     page = MainPage(browser, link)
     page.open()
     page.go_to_login_page()
-    page = LoginPage(browser, browser.current_url)
-    page.should_be_login_url()
+    login_page = LoginPage(browser, browser.current_url)
+    login_page.should_be_login_url()
 
 def test_guest_page_contains_login_form(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/"
     page = MainPage(browser, link)
     page.open()
     page.go_to_login_page()
-    page = LoginPage(browser, browser.current_url)
-    page.should_be_login_form()
+    login_page = LoginPage(browser, browser.current_url)
+    login_page.should_be_login_form()
 
 def test_guest_page_contains_registration_form(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/"
     page = MainPage(browser, link)
     page.open()
     page.go_to_login_page()
-    page = LoginPage(browser, browser.current_url)
-    page.should_be_register_form()
+    login_page = LoginPage(browser, browser.current_url)
+    login_page.should_be_register_form()
