@@ -2,8 +2,12 @@
 
 <h2>Общая информация</h2>
 <br>
-Тест работает, с помощью следующей команды: 
+markers =
 <br>
-pytest -v --tb=line --language=en test_main_page.py.
-<br> 
-В этой команде мы использовали опцию PyTest --tb=line, которая указывает, что нужно выводить только одну строку из лога каждого упавшего теста.
+    need_review: marker for review tests
+<br>
+    test_user_setup: marker for setup example
+<br>
+Чтобы запустить 4 необходимых теста используйте команду (убедитесь, что правильно указали расположение сайта) 
+<br>
+pytest -v --tb=line --language=en -m need_review test_main_page.py.
