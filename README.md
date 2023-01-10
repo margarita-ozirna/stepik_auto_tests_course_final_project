@@ -11,4 +11,4 @@ markers =
 <br>
 <h3> Чтобы запустить 4 необходимых теста используйте команду (убедитесь, что правильно указали расположение сайта) </h3>
 <br>
-pytest -v --tb=line --language=en -m need_review test_main_page.py.
+pytest -v --tb=line --language=en -m need_review 
